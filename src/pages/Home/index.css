@@ -1,6 +1,4 @@
-.home_wrapper {
-    color:red
-}
-.lal {
-    color: red;
+.home {
+    width: 100%;
+    min-height: 100%;
 }

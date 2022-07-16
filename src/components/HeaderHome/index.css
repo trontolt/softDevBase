@@ -1,0 +1,10 @@
+.header {
+    display:flex;
+    flex-direction: row;
+}
+.header--left-side {
+    width: 50%;
+}
+.header--right-side {
+    width: 50%;
+}
