@@ -1,6 +1,10 @@
 import React, { createContext, useState } from 'react';
 import { HeaderHome } from '../../components/HeaderHome';
+import { Aside } from '../../components/Aside';
+import { InfoScreen } from '../../components/InfoScreen';
+import { TagsSector } from '../../components/TagsSector';
 import { DescriptionType } from '../../constants/enums';
+
 import './index.css';
 
 const defaultState = {
@@ -14,10 +18,10 @@ type IStateValue<T> = {
   [Key in keyof T]: T[Key];
 };
 
-export const Home = () => {
-  const TagsContext = createContext(null);
-  const [homeValues, setHomeValues] = useState<IHomeState>(defaultState);
+export const TagsContext = createContext(null);
 
+export const Home = () => {
+  const [homeValues, setHomeValues] = useState<IHomeState>(defaultState);
   const changeHomeValues = (homeValue: IStateValue<IHomeState>) => {
     setHomeValues({ ...homeValues, ...homeValue });
   };
@@ -30,7 +34,13 @@ export const Home = () => {
       }}>
       <div className="home">
         <HeaderHome />
-        <div className="home--body">home--body</div>
+        <div className="home--body">
+          <Aside />
+          <div className="body--right-side">
+            <InfoScreen />
+            <TagsSector />
+          </div>
+        </div>
       </div>
     </TagsContext.Provider>
   );

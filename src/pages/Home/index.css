@@ -2,3 +2,11 @@
     width: 100%;
     min-height: 100%;
 }
+.home--body {
+    display:flex;
+    flex-direction: row;
+}
+.body--right-side {
+    width:80%;
+    border-bottom: 1px solid var(--main-gray-transparent-color);
+}

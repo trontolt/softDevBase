@@ -1,6 +1,8 @@
 .header {
     display:flex;
     flex-direction: row;
+    padding: 1rem;
+    border-bottom: 1px solid var(--main-gray-transparent-color);
 }
 .header--left-side {
     width: 50%;

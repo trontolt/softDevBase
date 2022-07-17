@@ -12,3 +12,10 @@ html, body {
 #root {
     height: 100%;
 }
+
+:root {
+    --main-gray-transparent-color: rgba(0, 0, 0, 0.12);
+    --main-gray-dark-color: rgb(82, 84, 82);
+}
+
+
