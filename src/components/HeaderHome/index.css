@@ -1,12 +1,12 @@
-.home {
-    width: 100%;
-    min-height: 100%;
-}
-.home--body {
+.header {
     display:flex;
     flex-direction: row;
-}
-.body--right-side {
-    width:80%;
+    padding: 1rem;
     border-bottom: 1px solid var(--main-gray-transparent-color);
+}
+.header--left-side {
+    width: 50%;
+}
+.header--right-side {
+    width: 50%;
 }
