@@ -1,0 +1,11 @@
+.tag-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info--section {
+    width: 100%;
+    background-color: var(--main-white-dark-color);
+}

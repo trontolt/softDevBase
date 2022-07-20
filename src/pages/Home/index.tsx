@@ -1,8 +1,8 @@
 import React, { createContext, useState } from 'react';
 import { HeaderHome } from '../../components/HeaderHome';
 import { Aside } from '../../components/Aside';
-import { InfoScreen } from '../../components/InfoScreen';
-import { TagsSector } from '../../components/TagsSector';
+import { InfoScreen } from '../../containers/InfoScreen';
+import { TagsSector } from '../../containers/TagsSector';
 import { DescriptionType } from '../../constants/enums';
 
 import './index.css';
@@ -11,6 +11,7 @@ const defaultState = {
   selectedCategory: null as null | number,
   selectedTag: null as null | number,
   isDescriptionModalOpen: false as boolean,
+  isFavoriteMode: false,
   descriptionModalType: DescriptionType.shortDescription as DescriptionType
 };
 type IHomeState = typeof defaultState;
