@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 import { HeaderHome } from '../../components/HeaderHome';
-import { Aside } from '../../components/Aside';
+import { Aside } from '../../containers/Aside';
 import { InfoScreen } from '../../containers/InfoScreen';
 import { TagsSector } from '../../containers/TagsSector';
 import { DescriptionType } from '../../constants/enums';
@@ -8,8 +8,8 @@ import { DescriptionType } from '../../constants/enums';
 import './index.css';
 
 const defaultState = {
-  selectedCategory: null as null | number,
-  selectedTag: null as null | number,
+  selectedCategory: 0 as number,
+  selectedTag: 0 as number,
   isDescriptionModalOpen: false as boolean,
   isFavoriteMode: false,
   descriptionModalType: DescriptionType.shortDescription as DescriptionType

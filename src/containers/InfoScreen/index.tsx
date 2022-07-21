@@ -7,6 +7,11 @@ import './index.css';
 interface IInfoScreen {}
 
 export const InfoScreen = ({}: IInfoScreen) => {
-  const { isFavoriteMode } = useContext(TagsContext);
-  return <div className="info-screen">{isFavoriteMode ? <Favorite /> : <TagInfo />}</div>;
+  const { homeValues } = useContext(TagsContext);
+  const { isFavoriteMode, selectedTag } = homeValues;
+  return (
+    <div className="info-screen">
+      {isFavoriteMode ? <Favorite /> : <TagInfo tagId={selectedTag} />}
+    </div>
+  );
 };

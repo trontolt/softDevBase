@@ -10,3 +10,8 @@
 .header--right-side {
     width: 50%;
 }
+.right-side--link-to-about {
+    background-color: var(--main-white-dark-color);
+    border-radius: 0.3rem;
+    padding: 5px;
+}
