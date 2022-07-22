@@ -1,7 +1,7 @@
 export const topicsData = [{
     id: 0,
-    name: 'First Topic',
-    additionalInfo: 'Topic description'
+    name: 'Agile',
+    additionalInfo: 'Development approaches'
 },{
     id: 1,
     name: 'Second Topic',

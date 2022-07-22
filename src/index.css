@@ -18,6 +18,7 @@ html, body {
     --main-gray-dark-color: rgb(82, 84, 82);
     --main-white-dark-color: rgb(250, 246, 246);
     --main-black-light-color: rgb(57, 56, 56);
+    --main-black-transparent-color: rgba(14, 14, 14, 0.836);
 }
 
 

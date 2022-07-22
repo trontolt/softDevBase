@@ -27,6 +27,10 @@ export const Home = () => {
     setHomeValues({ ...homeValues, ...homeValue });
   };
 
+  const changeInfoScreenMode = () => {
+    setHomeValues({ ...homeValues, isFavoriteMode: !homeValues.isFavoriteMode });
+  };
+
   return (
     <TagsContext.Provider
       value={{
@@ -34,7 +38,7 @@ export const Home = () => {
         changeHomeValues
       }}>
       <div className="home">
-        <HeaderHome />
+        <HeaderHome changeInfoScreenMode={changeInfoScreenMode} />
         <div className="home--body">
           <Aside />
           <div className="body--right-side">
