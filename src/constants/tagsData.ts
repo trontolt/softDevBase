@@ -1,26 +1,57 @@
 export const tagsData = [
-    {   
-        id: 0,
-        title: 'First Tag',
-        definition: "It is first tag",
-        shortInfo: 'It is short info0',
-        additionalInfo: "This is additional info0",
-        topicId: 0,
-    },
-    {   
-        id: 1,
-        title: 'second Tag',
-        definition: "It is second tag",
-        shortInfo: 'It is short info1',
-        additionalInfo: "This is additional info1",
-        topicId: 0,
-    },
-    {   
-        id:2,
-        title: 'Third Tag',
-        definition: "It is third tag",
-        shortInfo: 'It is short info3',
-        additionalInfo: "This is additional info3",
-        topicId: 1
-    },
-]
+  {
+    id: 0,
+    title: 'Agile',
+    definition:
+      'Подходы к разработке ПО, основанные на итеративном проходе по скоупу задач разными специалистами, с целью выпуска продукта или его части, удовлетворяющего клиента',
+    shortInfo: `<ul><li>Люди и процессы > инстурменты разработки ПО</li><li>Работающий продукт > грамотная документация</li><li>Общение с заказчиком > структурированный контракт</li>
+    <li>Работающий продукт > грамотная документация</li><li>Готовность к изменениям > первоначальный план</li></ul>`,
+    additionalInfo: `<ol><li>удовлетворение потребностей заказчика, благодаря регулярной и ранней поставке ценного программного обеспечения</li>
+    <li>Изменение требований приветствуется</li><li>Работающий продукт следует выпускать как можно чаще, с периодичностью от пары недель до пары месяцев</li>
+    <li>На протяжении всего проекта разработчики и представители бизнеса должны ежедневно работать вместе</li><li>Над проектом должны работать мотивированные профессионалы</li>
+    <li>Непосредственное общение является наиболее практичным и эффективным способом обмена информацией как с самой командой, так и внутри команды.</li>
+    <li>Работающий продукт — основной показатель прогресса.</li><li>Инвесторы, разработчики и пользователи должны иметь возможность поддерживать постоянный ритм бесконечно</li>
+    <li>Постоянное внимание к техническому совершенству и качеству проектирования повышает гибкость проекта.</li><li>Простота — искусство минимизации лишней работы — крайне необходима.</li>
+    <li>Самые лучшие требования, архитектурные и технические решения рождаются у самоорганизующихся команд.</li><li>Команда должна систематически анализировать возможные способы
+    улучшения эффективности и соответственно корректировать стиль своей работы.</li></ol>`,
+    topicId: 0
+  },
+  {
+    id: 1,
+    title: 'Scrum',
+    definition: 'Гибкая методология разработки ПО',
+    shortInfo: `<ul><li>Роли<ul><li>Product owner (заказчик или представитель)</li><li>Scrum Master</li><li>Developer Team</li></ul></li><li>Артифакты<ul><li>Product Backlog</li>
+    <li>Sprint Backlog</li><li>Sprint Goal</li><li>Burntdown Chart</li></ul></li><li>Компоненты<ul><li>Эпик</li><li>Сторя</li><li>Таска</li></ul></li><li>Собрания<ul>
+    <li>Backlog Refinement/grooming</li><li>Sprint Planning</li><li>Daily meetings</li><li>Review (Demo)</li><li>Retrospective</li></ul></li></ul>`,
+    additionalInfo:
+      'В отличии от канбана - Итерации по 2 недели, оценка в StoryPoints, velocity команды, нет wip limits, задачи определяются в планировании',
+    topicId: 0
+  },
+  {
+    id: 2,
+    title: 'Kanban',
+    definition: 'Подход в реализации agile (улучшение)',
+    shortInfo:
+      '<ul><li>Роли<ul><li>Service Delivery Manager</li><li>Service Request Manager</li></ul></li><li>Артифакты<ul><li>Доска с wip (work in progress) лимитами</li></ul></li></ul>',
+    additionalInfo:
+      'В отличии от скрама - нет итераций по 2 недели (разработка непрерывным процессом), оценка постфактум (cycleTime), нет велосити, есть WIP limits, можно добавлять задачи и менять приоритет всегда',
+    topicId: 0
+  },
+  {
+    id: 3,
+    title: 'Waterfall',
+    definition: 'Методология разработки ПО, основанная на поэтапном создании продукта',
+    shortInfo: `<ol><li>Requirements (analysis) - сбор информации</li><li>Design, UI - Проектирование, выбор технологии</li><li>Implementation - разработка продукта или его части</li>
+      <li>Testing - тесты и доработки</li><li>Maintanance - Поддержание, внесение изменений</li></ol>`,
+    additionalInfo: '',
+    topicId: 0
+  },
+  {
+    id: 999,
+    title: 'test',
+    definition: 'test definition',
+    shortInfo: 'short info test',
+    additionalInfo: 'test add info',
+    topicId: 1
+  }
+];

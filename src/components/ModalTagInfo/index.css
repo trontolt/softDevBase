@@ -1,0 +1,38 @@
+.modal-tag-info {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: var(--main-black-transparent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-tag-info--inner {
+    width:90%;
+    height: 90%;
+    background-color:white;
+}
+.modal-tag-info--header {
+    width: 100%;
+    height: 4rem;
+}
+.header--tab-mode {
+    width: 100%;
+    height: 100%;
+}
+.header--close-btn {
+    position: absolute;
+    top:1rem;
+    right:1rem;
+}
+.modal-tag-info--btn {
+    width: 50%;
+    height: 100%;
+    border-radius: 0;
+    border-color: var(--main-gray-transparent-color);
+}
+.modal-tag-info--btn:active {
+    border-color: var(--main-white-dark-color);
+}

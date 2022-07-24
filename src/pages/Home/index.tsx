@@ -23,8 +23,13 @@ export const TagsContext = createContext(null);
 
 export const Home = () => {
   const [homeValues, setHomeValues] = useState<IHomeState>(defaultState);
+
   const changeHomeValues = (homeValue: IStateValue<IHomeState>) => {
     setHomeValues({ ...homeValues, ...homeValue });
+  };
+
+  const changeInfoScreenMode = () => {
+    setHomeValues({ ...homeValues, isFavoriteMode: !homeValues.isFavoriteMode });
   };
 
   return (
@@ -34,12 +39,12 @@ export const Home = () => {
         changeHomeValues
       }}>
       <div className="home">
-        <HeaderHome />
+        <HeaderHome changeInfoScreenMode={changeInfoScreenMode} />
         <div className="home--body">
           <Aside />
           <div className="body--right-side">
-            <InfoScreen />
             <TagsSector />
+            <InfoScreen />
           </div>
         </div>
       </div>
