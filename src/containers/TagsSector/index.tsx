@@ -5,11 +5,15 @@ import { TagsContext } from '../../pages/Home';
 import './index.css';
 
 export const TagsSector = () => {
-  const { homeValues } = useContext(TagsContext);
+  const { homeValues, changeHomeValues } = useContext(TagsContext);
+  const selectTag = (id: number) => {
+    changeHomeValues({ selectedTag: id });
+  };
   const renderTags = () =>
     tagsData.map((tagData) => {
       if (tagData.topicId === homeValues.selectedCategory) {
-        return <Tag key={tagData.id} tagData={tagData} />;
+        const { id } = tagData;
+        return <Tag key={id} tagData={tagData} selectTag={selectTag} />;
       }
       return null;
     });

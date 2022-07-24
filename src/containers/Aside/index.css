@@ -1,5 +1,6 @@
 .aside {
     width: 20%;
+    overflow:scroll;
     border-right: 1px solid var(--main-gray-transparent-color);
     color: var(--main-gray-dark-color);
     padding:0.5rem;

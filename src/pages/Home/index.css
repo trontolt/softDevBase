@@ -7,6 +7,6 @@
     flex-direction: row;
 }
 .body--right-side {
-    width:80%;
+    width:75%;
     border-bottom: 1px solid var(--main-gray-transparent-color);
 }
