@@ -6,7 +6,12 @@ export const topicsData = [
   },
   {
     id: 1,
-    name: 'Second Topic',
-    additionalInfo: 'Topic description'
+    name: 'Принципы ООП',
+    additionalInfo: 'OOP principles'
+  },
+  {
+    id: 2,
+    name: 'Алгоритмы',
+    additionalInfo: 'Способы дсотижения быстродействия при вычеслении результатов'
   }
 ];
