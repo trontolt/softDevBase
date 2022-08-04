@@ -13,5 +13,10 @@ export const topicsData = [
     id: 2,
     name: 'Алгоритмы',
     additionalInfo: 'Способы дсотижения быстродействия при вычеслении результатов'
+  },
+  {
+    id: 3,
+    name: 'Performance Optimization',
+    additionalInfo: 'Methods how to improve performance of app'
   }
 ];
